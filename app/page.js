@@ -1,99 +1,21 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import { FaChevronRight } from "react-icons/fa";
-import { MdArrowOutward } from "react-icons/md";
 import Categories from "./components/Categories";
 import ProductList from "./components/ProductList";
 import Services from "./components/Services";
-import Clock from "./components/Clock";
 import Collections from "./components/Collections";
-import BasicSwiper from "./components/BasicSwiper";
-
-const slides = [
-  {
-    title: "More than keeping time",
-    desc: "It’s a statement of you",
-    img: "/hero4.jpg",
-    bg: "bg-[#c6ccd1]",
-  },
-  {
-    title: "Precision in Every Detail",
-    desc: "Luxury meets craftsmanship",
-    img: "/hero2.jpg",
-    bg: "bg-[#D9DAD9]",
-  },
-  {
-    title: "Redefining Timeless Style",
-    desc: "Explore our signature collection",
-    img: "/hero3.jpg",
-    bg: "bg-[#eee4e1]",
-  },
-];
+import MobileBottomNav from "./components/MobileBottomNav";
+import HeroSection from "./components/HeroSection";
 
 export default function Home() {
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 8000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <main className="w-full">
-      <section className="flex flex-col-reverse md:flex-row md:h-[700px]">
-        {/* Left Content */}
-        <div
-          key={current} // forces re-mount on slide change
-          className={`flex w-full md:w-1/2 pt-20 md:pt-0 justify-center items-center transition-colors duration-500 ${slides[current].bg}`}>
-          <div className="flex flex-col justify-center items-center md:items-start max-w-xl gap-4">
-            <h1 className="text-3xl md:text-7xl leading-[1.2] fade-in-up">
-              {slides[current].title}
-            </h1>
-            <p className="text-lg md:xl fade-in-up">{slides[current].desc}</p>
-
-            <div className="fade-in-up md:mt-10">
-              <div className="group flex justify-center items-center gap-1 w-46 h-10 md:w-52 md:h-14 md:text-lg bg-white text-black cursor-pointer transition-all duration-300 ease-in-out">
-                <span>View Collection</span>
-                <FaChevronRight className="text-sm transform transition-transform duration-500 group-hover:translate-x-3" />
-              </div>
-            </div>
-
-            <div className="flex gap-2 fade-in-up my-2 md:mt-12 items-end">
-              {slides.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setCurrent(i)}
-                  className={`w-3 transition-all duration-500 rounded-full ${
-                    i === current ? "w-6 h-3  bg-black" : "h-3 bg-gray-400"
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Right Image */}
-        <div className="relative w-full md:w-1/2 h-90 md:h-auto overflow-hidden">
-          <Image
-            key={slides[current].img} // re-mount for fade effect
-            src={slides[current].img}
-            alt="Hero Banner"
-            fill
-            style={{ objectFit: "cover" }}
-            priority
-            className="opacity-0 animate-fade-in"
-          />
-        </div>
-      </section>
-
+      <HeroSection />
       <Collections />
       <Categories />
       <ProductList />
       <Services />
+      <MobileBottomNav />
     </main>
   );
 }

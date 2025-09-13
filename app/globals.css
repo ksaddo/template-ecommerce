@@ -29,6 +29,75 @@ body {
   height: clamp(300px, 60vh, 100vh);
 }
 
+.line-clamp-1 {
+  display: -webkit-box;
+  display: box; /* Fallback */
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+/* Style the pagination */
+.swiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  bottom: 16px; /* distance from bottom */
+  left: 0;
+  right: 0;
+  z-index: 10; /* make sure it's above content */
+}
+
+/* Pagination container */
+.swiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Bullets */
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Active bullet */
+.swiper .swiper-pagination-bullet-active {
+  background: #000;
+  border: 1px solid #000;
+  width: 24px;
+  height: 24px;
+  box-shadow: 0 0 0 6px #fff inset;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
