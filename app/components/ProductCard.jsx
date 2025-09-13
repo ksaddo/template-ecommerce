@@ -10,7 +10,7 @@ export default function ProductCard({ group, selectedIndex, onSelect }) {
     <div className="flex flex-col justify-between overflow-hidden">
       {/* Product Image + hover icons */}
       <div className="group">
-        <div className="relative w-full h-70 md:h-90 overflow-hidden">
+        <div className="relative w-full h-70 md:h-80 overflow-hidden">
           <Image
             src={product.img}
             alt={product.name}
@@ -35,8 +35,8 @@ export default function ProductCard({ group, selectedIndex, onSelect }) {
       </div>
 
       {/* Product Info */}
-      <div className="text-left space-y-2 p-4 mx-auto">
-        <h3 className="text">{product.name}</h3>
+      <div className="text-left space-y-1 p-4 mx-auto">
+        <h3 className="text h-12 md:h-6">{product.name}</h3>
         <p className="text-gray-600 text-sm">{product.desc}</p>
 
         <p className="font-bold">{product.price}</p>

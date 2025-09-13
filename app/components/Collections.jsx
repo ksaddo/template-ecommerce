@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 export default function Collections() {
   return (
-    <section className="grid gap-4 md:gap-8 section-padding md:grid-cols-2 min-h-[800px] md:min-h-[900px]">
+    <section className="grid gap-4 md:gap-8 p-[clamp(1rem,4vw,8rem)] md:grid-cols-2 min-h-[800px] md:min-h-[900px]">
       {/* Left half */}
       <div className="relative flex flex-col justify-center items-center md:block h-[300px] md:h-auto text-white bg-gray-400 overflow-hidden ">
         <Image

@@ -14,7 +14,7 @@ export default function Categories() {
   const [current, setCurrent] = useState(0);
 
   return (
-    <div className="flex flex-col section-padding bg-[#f8f6f2] bg-opacity-40">
+    <div className="flex flex-col p-[clamp(1rem,4vw,8rem)] bg-[#f8f6f2] bg-opacity-40">
       <h1 className="w-full text-[22px] md:text-[42px] mb-6 md:mb-8 text-left">
         Shop By Categories
       </h1>
