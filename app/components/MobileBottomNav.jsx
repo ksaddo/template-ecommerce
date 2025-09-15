@@ -18,13 +18,13 @@ export default function MobileBottomNav() {
 
   return (
     <nav className="fixed bottom-0 left-0 w-full bg-white shadow-lg md:hidden z-50">
-      <ul className="flex justify-around items-center px-6 py-3 text-xl">
+      <ul className="flex justify-around items-center px-6 py-3 font-bold text-xl">
         {navItems.map((item, index) => (
           <li
             key={index}
             className="flex flex-col items-center justify-center">
             {item.icon}
-            <span className="text-xs mt-1">{item.label}</span>
+            <span className="text-[14px] mt-1">{item.label}</span>
           </li>
         ))}
       </ul>

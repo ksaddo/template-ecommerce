@@ -31,7 +31,7 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="w-full px-[clamp(1rem,4vw,8rem)] bg-[#f8f6f2]">
+    <div className="w-full px-[clamp(1rem,4vw,8rem)] border border-t-neutral-300">
       {/* Swiper for sm & md */}
       <div className="block lg:hidden">
         <Swiper
@@ -49,7 +49,7 @@ export default function Services() {
               key={index}
               className="flex justify-center items-center">
               <div className="flex flex-col justify-center items-center pt-3 w-full">
-                <span className="flex justify-center items-center rounded-full w-[60px] h-[60px] bg-white mb-4">
+                <span className="flex justify-center items-center rounded-full w-[60px] h-[60px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] mb-4">
                   {service.icon}
                 </span>
                 <h3 className="text-lg text-gray-900 mb-1">{service.title}</h3>
@@ -66,7 +66,7 @@ export default function Services() {
           <div
             key={index}
             className="flex justify-center gap-6 items-center w-full">
-            <span className="flex justify-center items-center rounded-full w-[70px] h-[70px] bg-white">
+            <span className="flex justify-center items-center rounded-full w-[70px] h-[70px] shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
               {service.icon}
             </span>
             <span className="space-y-2">

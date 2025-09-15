@@ -18,7 +18,7 @@ export default function HeroSection() {
       title: "Phantom Chrono",
       desc: "The luxury of perfect design, for those who demand excellence and appreciate the interplay of style.",
       img: "/hero/newhero2.png",
-      bg: "bg-[#F2F4F7]",
+      bg: "bg-[#E4F1E7]",
     },
     {
       title: "Midnight Voyager",
@@ -45,12 +45,12 @@ export default function HeroSection() {
           <SwiperSlide
             key={index}
             className={`relative w-full h-full ${slide.bg}`}>
-            <div className="md:hidden relative w-full h-[400px]">
-              <div className="absolute inset-0 bg-white/30 z-10"></div>
+            <div className="md:hidden relative w-full h-[400px] border">
+              <div className="absolute inset-0 bg-white/30 z-5"></div>
 
               {/* Text overlay */}
-              <div className="absolute inset-0 flex flex-col justify-center items-center px-4 z-20">
-                <h1 className="text-4xl fade-in-up text-black text-shadow-lg text-shadow-black-200/50">
+              <div className="absolute inset-0 flex flex-col justify-center items-center px-4 z-10 border border-green-700">
+                <h1 className="text-3xl fade-in-up text-black text-shadow-lg text-shadow-black-200/50">
                   {slide.title}
                 </h1>
 
@@ -63,7 +63,7 @@ export default function HeroSection() {
                 <Image
                   src={slide.img}
                   alt={slide.title}
-                  className=" object-contain"
+                  className=" object-contain border border-red-800"
                   width={220}
                   height={220}
                   priority
@@ -72,26 +72,26 @@ export default function HeroSection() {
             </div>
 
             {/* md version */}
-            <div className="hidden md:flex items-center w-full h-[400px] lg:h-[430px] xl:h-[770px] 2xl:h-[780px] 2xl:gap-20 px-[clamp(3rem,8vw,10rem)]">
-              <div className="w-1/2 2xl:pl-30 flex flex-col justify-center items-start">
-                <h1 className="text-[40px] lg:text-5xl xl:text-7xl text-black">
+            <div className="hidden md:flex items-center w-full h-[400px] lg:h-[430px] xl:h-[780px] px-[clamp(1rem,4vw,8rem)]">
+              <div className="w-1/2 2xl:pl-40 flex flex-col justify-center items-start">
+                <h1 className="text-[44px] lg:text-5xl xl:text-7xl text-black">
                   {slide.title}
                 </h1>
-                <p className="2xl:w-[580px] xl:text-xl mt-2 lg:mt-6 xl:mt-7 line-clamp-2">
+                <p className="2xl:w-[580px] text-lg xl:text-xl mt-2 lg:mt-6 xl:mt-7 line-clamp-2">
                   {slide.desc}
                 </p>
-                <button className="flex items-center justify-center gap-2 mt-6 lg:mt-8 xl:mt-10 w-42 h-10 text-lg bg-black text-white rounded">
+                <button className="mt-6 lg:mt-8 xl:mt-10 w-52 h-14 text-lg bg-black text-white rounded">
                   View Collection
-                  <FaChevronRight className="text-sm transition-transform duration-500 group-hover:translate-x-3" />
                 </button>
               </div>
-              <div className="w-1/2  h-full flex lg:pl-0 lg:justify-center 2xl:justify-start items-center ">
+              <div className="w-1/2 h-full flex pl-22 lg:pl-0 lg:justify-center 2xl:justify-center 2xl:pr-10 items-center">
                 <Image
                   src={slide.img}
                   alt={slide.title}
-                  width={600} // just for Next.js optimization, not the actual display size
-                  height={600}
-                  className="object-contain w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[520px] xl:h-[520px] 2xl:w-[600px] 2xl:h-[600px]"
+                  className="object-cover lg:w-[350px] xl:w-[520px] 2xl:w-[600px]"
+                  width={260}
+                  height={260}
+                  priority
                 />
               </div>
             </div>

@@ -30,7 +30,7 @@ export default function ProductsList() {
         {/* Left Arrow */}
         <button
           onClick={() => swiperRef.current?.slidePrev()}
-          className="z-10 absolute left-1 md:left-6 p-3 rounded-full bg-white text-black shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-gray-300 transition">
+          className="hidden md:block z-10 absolute left-1 md:left-6 p-3 rounded-full bg-white text-black shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-gray-300 transition">
           <FiChevronLeft size={22} />
         </button>
 
@@ -66,7 +66,7 @@ export default function ProductsList() {
         {/* Right Arrow */}
         <button
           onClick={() => swiperRef.current?.slideNext()}
-          className="z-10 absolute right-1 md:right-6 p-3 rounded-full bg-white text-black shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-gray-300 transition">
+          className="hidden md:block z-10 absolute right-1 md:right-6 p-3 rounded-full bg-white text-black shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-gray-300 transition">
           <FiChevronRight size={22} />
         </button>
       </div>
