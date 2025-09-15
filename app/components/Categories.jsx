@@ -23,7 +23,6 @@ export default function Categories() {
       {/* Mobile Swiper */}
       <div className="block md:hidden">
         <div className="relative w-full py-6">
-          {" "}
           {/* spacing above and below */}
           <Swiper
             modules={[Pagination, Autoplay]}
