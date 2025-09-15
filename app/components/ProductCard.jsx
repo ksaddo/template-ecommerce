@@ -20,7 +20,7 @@ export default function ProductCard({ group, selectedIndex, onSelect }) {
           />
         </div>
 
-        <div className="mt-5 md:mt-6 md:mb-3 flex justify-center gap-2 md:opacity-0 md:translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+        <div className="mt-4 md:mt-6 md:mb-3 flex justify-center gap-2 md:opacity-0 md:translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
           {icons.map((Icon, i) => (
             <span
               key={i}
@@ -36,7 +36,7 @@ export default function ProductCard({ group, selectedIndex, onSelect }) {
 
       {/* Product Info */}
       <div className="text-left space-y-1 p-4 mx-auto">
-        <h3 className="text h-12 md:h-6">{product.name}</h3>
+        <h3 className="text h-12 md:h-6 font-bold">{product.name}</h3>
         <p className="text-gray-600 text-sm">{product.desc}</p>
 
         <p className="font-bold">{product.price}</p>
