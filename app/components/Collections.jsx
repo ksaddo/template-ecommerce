@@ -11,7 +11,7 @@ export default function Collections() {
         <div className="absolute inset-0 z-10 transition ease-in-out duration-300 bg-white/10 group-hover:bg-white/20" />
         {/* Image */}
         <Image
-          src="/hero6.jpg"
+          src="/collection/hero6.jpg"
           alt="Signature Collections"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -38,7 +38,7 @@ export default function Collections() {
         <div className="relative h-[300px] md:h-auto overflow-hidden border group">
           <div className="absolute inset-0 bg-black/20 z-10 transition ease-in-out duration-300 group-hover:bg-black/15" />
           <Image
-            src="/top.png"
+            src="/collection/top.png"
             alt="Bottom Right 1"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -61,7 +61,7 @@ export default function Collections() {
         <div className="relative h-[300px] md:h-auto overflow-hidden border group">
           <div className="absolute inset-0 bg-black/20 z-10 transition ease-in-out duration-300 group-hover:bg-black/10" />
           <Image
-            src="/hero1.jpeg"
+            src="/collection/hero1.jpeg"
             alt="Bottom Right 1"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"

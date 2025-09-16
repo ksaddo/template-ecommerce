@@ -6,7 +6,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import products from "./products"; // grouped array
+import products from "./products";
 import ProductCard from "./ProductCard";
 
 export default function ProductsList() {
