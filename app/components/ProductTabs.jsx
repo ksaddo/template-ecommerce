@@ -6,14 +6,14 @@ export default function ProductTabs() {
   const tabs = ["Description", "Return Policies", "Reviews", "Warranty"];
 
   return (
-    <div className="w-full border border-gray-300">
+    <div className="w-full border border-gray-200 mt-12 px-4 md:px-10">
       {/* Tab Headers */}
-      <div className="flex gap-6 border-b border-gray-300 font-bold text-sm">
+      <div className="flex gap-6 md:justify-between border-b border-gray-200 font-bold text-sm md:text-lg overflow-x-auto hide-scrollbar">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`py-3 ${
+            className={`py-3 whitespace-nowrap ${
               activeTab === tab ? "border-b-2 border-black" : ""
             }`}>
             {tab}
@@ -22,7 +22,7 @@ export default function ProductTabs() {
       </div>
 
       {/* Tab Content */}
-      <div className="mt-4 text-sm text-gray-700">
+      <div className="my-4 md:my-8 text-sm md:text-base text-gray-700">
         {activeTab === "Description" && (
           <p>
             Sleek design meets modern craftsmanship. This timepiece features a

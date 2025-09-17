@@ -20,6 +20,16 @@ body {
   font-family: var(--font-red-hat), sans-serif;
 }
 
+/* global.css or a CSS module */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 .section-padding {
   /* min = p-4 (1rem), fluid scaling, max = p-20 (5rem) */
   padding: clamp(1rem, 6vw, 8rem);

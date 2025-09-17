@@ -17,7 +17,7 @@ export default function TopBar() {
 
   return (
     <header>
-      <div className="flex w-full h-16 px-4 md:px-10 items-center border-b border-neutral-300">
+      <div className="flex w-full h-16 px-4 md:px-10 items-center md:border-b md:border-neutral-300">
         {/* Hamburger Button (mobile only) */}
         <button
           onClick={() => setIsOpen(true)}
