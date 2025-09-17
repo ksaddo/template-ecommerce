@@ -17,13 +17,7 @@ export default function ProductsListingPage() {
   const categories = ["Quartz", "Digital", "Luxury", "Sport", "Smart", "Casual"]; // prettier-ignore
   const prices = ["Under $100", "$100 - $500", "$500 - $1000", "Above $1000"]; // prettier-ignore
   const brands = ["Grand Sieko", "Caveman Watches", "Breitling", "Apple", "Others"]; // prettier-ignore
-  const options = [
-    "Shop by latest",
-    "Price: Low to High",
-    "Price: High to Low",
-    "Best Sellers",
-    "Customer Rating",
-  ];
+  const options = ["Shop by latest", "Price: Low to High", "Price: High to Low", "Best Sellers","Customer Rating"]; // prettier-ignore
 
   return (
     <div className="w-full min-h-[800px] md:min-h-[900px] px-[clamp(1rem,4vw,8rem)]">

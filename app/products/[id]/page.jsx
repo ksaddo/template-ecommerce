@@ -3,17 +3,11 @@ import { useParams } from "next/navigation";
 import products from "../../components/products";
 import Image from "next/image";
 import { useState } from "react";
-import {
-  FiSearch,
-  FiUser,
-  FiHeart,
-  FiShoppingBag,
-  FiTruck,
-  FiShare2,
-  FiX,
-} from "react-icons/fi";
+import {FiCheckCircle, FiUser, FiHeart, FiShoppingBag, FiTruck, FiShare2, FiX,} from "react-icons/fi"; // prettier-ignore
 import { GoShieldCheck, GoQuestion } from "react-icons/go";
 import { MdArrowOutward } from "react-icons/md";
+import { GiReturnArrow } from "react-icons/gi";
+import ProductTabs from "@/app/components/ProductTabs";
 
 export default function ProductDetailsPage() {
   const { id } = useParams();
@@ -90,7 +84,34 @@ export default function ProductDetailsPage() {
             <FiShare2 className="text-xl" /> Share
           </button>
         </div>
+
+        <div className="flex flex-col w-full gap-4">
+          <div className="flex flex-col w-full h-[160px] text-[14px] p-10 gap-2 text-center border border-gray-300">
+            <FiCheckCircle className="text-5xl mx-auto" />
+            1-year limited warranty. Covers manufacturing defects, free
+            replacement
+          </div>
+          <div className="flex flex-col w-full h-[160px] text-[14px] p-10 gap-2 text-center border border-gray-300">
+            <GiReturnArrow className="text-5xl mx-auto" />
+            30-day return policy. Enjoy hassle-free returns or exchanges with
+            full support
+          </div>
+        </div>
+
+        <div className="flex gap-2 items-center hover:text-[#814037] text-sm font-bold">
+          <GoShieldCheck className="text-xl font-extrabold" /> Protected Payment
+          System
+        </div>
+        <div className="relative w-full h-10 gap-4">
+          <Image
+            src="/payments.png"
+            alt="Payment cards"
+            fill
+            className="object-contain"
+          />
+        </div>
       </div>
+      <ProductTabs />
     </div>
   );
 }
