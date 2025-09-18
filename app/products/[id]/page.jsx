@@ -3,15 +3,8 @@ import { useParams } from "next/navigation";
 import products from "../../components/products";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import {
-  FiCheckCircle,
-  FiUser,
-  FiHeart,
-  FiShoppingBag,
-  FiTruck,
-  FiShare2,
-  FiX,
-} from "react-icons/fi";
+import { FiCheckCircle, FiUser, FiHeart, FiShoppingBag, FiShare2, FiX, FiTruck} from "react-icons/fi"; // prettier-ignore
+
 import { GoShieldCheck, GoQuestion } from "react-icons/go";
 import { MdArrowOutward } from "react-icons/md";
 import { GiReturnArrow } from "react-icons/gi";

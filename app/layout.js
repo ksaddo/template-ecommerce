@@ -1,8 +1,9 @@
 import { Red_Hat_Display } from "next/font/google";
 import "./globals.css";
-import TopBar from "./components/TopBar";
+import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Marquee from "./components/Marquee";
+import MobileBottomNav from "./components/MobileBottomNav";
 
 const redHat = Red_Hat_Display({
   variable: "--font-red-hat",
@@ -21,8 +22,9 @@ export default function RootLayout({ children }) {
       className={redHat.variable}>
       <body className="antialiased font-sans">
         <Marquee />
-        <TopBar />
+        <NavBar />
         {children}
+        <MobileBottomNav />
         <Footer />
       </body>
     </html>

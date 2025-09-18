@@ -21,38 +21,30 @@ export default function Categories() {
       </h1>
 
       {/* Mobile Swiper */}
-      <div className="block md:hidden">
-        <div className="relative w-full py-6">
-          {/* spacing above and below */}
-          <Swiper
-            modules={[Pagination, Autoplay]}
-            pagination={{ clickable: true }}
-            loop={true}
-            autoplay={{ delay: 2500, disableOnInteraction: false }}
-            speed={800}
-            className="w-full h-[calc(100vw*0.75)]" // approximate 3/4 aspect ratio
-          >
-            {categories.map((cat, i) => (
-              <SwiperSlide key={i}>
-                <div className="relative w-full h-full">
-                  <Image
-                    src={cat.img}
-                    alt={cat.name}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/30"></div>
-                  <button className="group absolute bottom-4 left-1/2 -translate-x-1/2 inline-flex h-10 items-center justify-center bg-white px-4 text-black shadow-md">
-                    <span className="text-lg">{cat.name}</span>
-                    <div className="w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
-                      <MdArrowOutward />
-                    </div>
-                  </button>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+      <div className="flex justify-center items-center md:hidden w-full h-[380px]">
+        <Swiper
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+          className="flex justify-center items-center w-full">
+          {categories.map((cat, i) => (
+            <SwiperSlide key={i}>
+              <div className="relative justify-self-center content-center w-[270px] h-[380px]">
+                <Image
+                  src={cat.img}
+                  alt={cat.name}
+                  fill
+                  className="object-cover"
+                />
+                <button className="group absolute bottom-4 left-1/2 -translate-x-1/2 inline-flex h-10 items-center justify-center bg-white px-4 text-black shadow-md">
+                  <span className="text-lg">{cat.name}</span>
+                  <div className="w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0 group-hover:pl-1 group-hover:opacity-100">
+                    <MdArrowOutward />
+                  </div>
+                </button>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       {/* Desktop Grid */}

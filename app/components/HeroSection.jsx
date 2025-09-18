@@ -11,25 +11,29 @@ export default function HeroSection() {
     {
       title: "The Regal Orbit",
       desc: "Crafted for those who value more than time, each piece tells stories of passion, heritage.",
+      short: "Crafted for those who value more than time",
       img: "/hero/newhero1.png",
       bg: "bg-[#F8F3F2]",
     },
     {
       title: "Phantom Chrono",
       desc: "The luxury of perfect design, for those who demand excellence and appreciate the interplay of style.",
+      short: "The luxury of perfect design",
+
       img: "/hero/newhero2.png",
       bg: "bg-[#F2F4F7]",
     },
     {
       title: "Midnight Voyager",
       desc: "Crafted with the highest attention to detail, this watch seamlessly combines innovation with exquisite design",
+      short: "Crafted with the highest attention to detail",
       img: "/hero/newhero4.png",
       bg: "bg-[#EAECEC]",
     },
   ];
 
   return (
-    <section className="w-full relative">
+    <section className="w-full">
       <Swiper
         modules={[Pagination, Autoplay]}
         spaceBetween={0}
@@ -44,28 +48,29 @@ export default function HeroSection() {
         {slides.map((slide, index) => (
           <SwiperSlide
             key={index}
-            className={`relative w-full h-full ${slide.bg}`}>
-            <div className="md:hidden relative w-full h-[400px]">
-              <div className="absolute inset-0 bg-white/30 z-10"></div>
-
+            className={`w-full h-full ${slide.bg}`}>
+            <div className="md:hidden flex flex-col-reverse gap-8 justify-end items-center w-full h-[540px] mt-4">
               {/* Text overlay */}
-              <div className="absolute inset-0 flex flex-col justify-center items-center px-4 z-20">
+              <div className="flex flex-col justify-center items-center px-4 z-20">
                 <h1 className="text-4xl fade-in-up text-black text-shadow-lg text-shadow-black-200/50">
                   {slide.title}
                 </h1>
+                <p className="mt-3 lg:mt-6 xl:mt-7 line-clamp-2">
+                  {slide.short}
+                </p>
 
                 <button className="group flex items-center justify-center gap-2 w-42 h-10 bg-black text-white rounded-sm cursor-pointer transition-all duration-300 ease-in-out mt-4">
                   <span>View Collection</span>
                   <FaChevronRight className="text-sm transition-transform duration-500 group-hover:translate-x-3" />
                 </button>
               </div>
-              <div className="flex justify-center w-full h-full">
+              <div className="flex justify-center w-full">
                 <Image
                   src={slide.img}
                   alt={slide.title}
                   className=" object-contain"
-                  width={220}
-                  height={220}
+                  width={300}
+                  height={300}
                   priority
                 />
               </div>

@@ -39,36 +39,6 @@ body {
   height: clamp(300px, 60vh, 100vh);
 }
 
-.line-clamp-1 {
-  display: -webkit-box;
-  display: box; /* Fallback */
-  -webkit-box-orient: vertical;
-  box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 1;
-  line-clamp: 1;
-}
-
-.line-clamp-2 {
-  display: -webkit-box;
-  display: box;
-  -webkit-box-orient: vertical;
-  box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-}
-
-.line-clamp-3 {
-  display: -webkit-box;
-  display: box;
-  -webkit-box-orient: vertical;
-  box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-}
-
 /* Remove clamping on large screens (1024px+) */
 @media (min-width: 1024px) {
   .line-clamp-1,
@@ -87,18 +57,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  bottom: 16px; /* distance from bottom */
-  left: 0;
-  right: 0;
   z-index: 10; /* make sure it's above content */
-}
-
-/* Pagination container */
-.swiper .swiper-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+  margin-bottom: 10px;
 }
 
 /* Bullets */
