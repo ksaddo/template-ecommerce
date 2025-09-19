@@ -48,7 +48,7 @@ export default function Services() {
             <SwiperSlide
               key={index}
               className="flex justify-center items-center">
-              <div className="flex flex-col justify-center items-center pt-3 w-full">
+              <div className="flex flex-col justify-center items-center pt-4 w-full">
                 <span className="flex justify-center items-center rounded-full w-[60px] h-[60px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] mb-4">
                   {service.icon}
                 </span>
