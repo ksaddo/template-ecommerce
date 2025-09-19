@@ -4,15 +4,15 @@ import { MdArrowOutward } from "react-icons/md";
 
 export default function Collections() {
   return (
-    <section className="grid gap-4 md:gap-8 p-[clamp(1rem,4vw,8rem)] md:grid-cols-2 md:min-h-[700px] 2xl:min-h-[900px]">
+    <section className="p-4 md:p-[30px] xl:p-[50px] 2xl:px-[100px] 2xl:py-[60px] grid gap-4 md:gap-8 md:grid-cols-2 md:min-h-[700px] 2xl:min-h-[900px]">
       {/* Left half */}
-      <div className="relative h-[300px] md:h-[700px] 2xl:h-[900px] overflow-hidden group ">
+      <div className="relative h-[300px] md:h-[700px] 2xl:h-[900px] overflow-hidden group">
         <Image
           src="/collection/hero6.jpg"
           alt="Signature Collections"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover transition-transform duration-1000 ease-in-out group-hover:scale-110 brightness-80"
+          className="object-cover transition-transform duration-1000 ease-in-out group-hover:scale-110 brightness-90"
           priority
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center md:block w-full z-20 md:p-14 space-y-3 md:space-y-4 text-center md:text-left text-white">
@@ -47,13 +47,13 @@ export default function Collections() {
             alt="Bottom Right 1"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover transition-transform duration-1000 ease-in-out group-hover:scale-110  brightness-80"
+            className="object-cover transition-transform duration-1000 ease-in-out group-hover:scale-110  brightness-90"
             priority
           />
         </div>
 
         {/* Bottom right card */}
-        <div className="relative h-[300px] md:h-auto overflow-hidden group contrast-110">
+        <div className="relative h-[300px] md:h-auto overflow-hidden group">
           <div className="absolute inset-0 flex flex-col justify-center items-center md:block w-full z-20 md:p-14 space-y-3 md:space-y-4 text-center md:text-left text-white">
             <h3 className="text-xl md:text-xl lg:text-2xl xl:text-3xl">
               Vintage Collections
@@ -68,7 +68,7 @@ export default function Collections() {
             alt="Bottom Right 1"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover transition-transform duration-1000 ease-in-out group-hover:scale-110  brightness-65"
+            className="object-cover transition-transform duration-1000 ease-in-out group-hover:scale-110 brightness-75"
             priority
           />
         </div>

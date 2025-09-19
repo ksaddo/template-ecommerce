@@ -15,8 +15,8 @@ const categories = [
 
 export default function NewCategory() {
   return (
-    <section className="bg-[#EAECEC]">
-      <div className="flex flex-col w-full px-[clamp(1rem,4vw,8rem)] py-[clamp(2rem,6vw,12rem)]">
+    <section className="bg-[#F3F5F5] p-4 md:p-[30px] xl:p-[50px] 2xl:px-[100px] 2xl:py-[60px]">
+      <div className="flex flex-col w-full pb-[70px] md:pb-[110px]">
         <h1 className="text-[22px] md:text-[32px] xl:text-[42px] md:text-center mb-6 md:mb-8 xl:mb-11">
           Shop By Categories
         </h1>
@@ -29,7 +29,7 @@ export default function NewCategory() {
                 key={index}
                 className="flex flex-col items-center shrink-0">
                 <button
-                  className="relative w-[clamp(85px,8vw,100px)] h-[clamp(85px,8vw,100px)] rounded-full overflow-hidden group shrink-0 shadow-md"
+                  className="relative w-[85px] h-[85px] md:w-[100px] md:h-[100px] rounded-full overflow-hidden group shrink-0 shadow-md"
                   aria-label={`Shop ${cat.name}`}>
                   <Image
                     src={cat.img}

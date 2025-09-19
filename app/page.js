@@ -12,7 +12,6 @@ export default function Home() {
     <main className="w-full">
       <HeroSection />
       <Collections />
-
       <NewCategory />
       <ProductList />
       <Services />

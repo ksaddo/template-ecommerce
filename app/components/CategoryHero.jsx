@@ -4,11 +4,11 @@ import { MdArrowOutward } from "react-icons/md";
 
 export default function CategoryHero() {
   return (
-    <section className="w-full p-[clamp(1rem,4vw,8rem)] 2xl:px-[110px]">
+    <section className="w-full">
       <div className="flex flex-col-reverse md:flex-row w-full md:h-[530px] bg-white">
         {/* Text section*/}
-        <div className="flex flex-col justify-center items-center w-full md:w-1/2 md:h-full space-y-4 pt-5 pb-7 px-2 text-center mx-auto">
-          <h1 className="text-[30px] md:text-4xl xl:text-[52px] fade-in-up">
+        <div className="flex flex-col justify-center items-center w-full md:w-1/2 md:h-full space-y-4 pt-6 pb-8 px-2 md:py-0 text-center mx-auto">
+          <h1 className="text-[28px] md:text-4xl xl:text-[52px] fade-in-up">
             Simplicity in Motion
           </h1>
           <p className="text-gray-600 text-sm fade-in-up">
