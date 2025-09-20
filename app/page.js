@@ -13,7 +13,6 @@ export default function Home() {
       <HeroSection />
       <NewCategory />
       <Collections />
-
       <ProductList />
       <Services />
     </main>

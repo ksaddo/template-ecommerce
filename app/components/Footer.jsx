@@ -34,7 +34,7 @@ export default function Footer() {
           <p className="text-3xl font-bold text-white">template</p>
           <p>
             Address: Chirapatre Estate, F9, <br />
-            Kumasi, GH <br />
+            Kumasi, Gh <br />
             Email: evansaddo12@gmail.com <br />
             Phone: +233-2465-06590
           </p>
