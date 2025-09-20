@@ -2,7 +2,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 export default function Account() {
   return (
-    <div className="mx-auto w-[640px] h-[360px] px-8 py-6 space-y-4 border border-gray-300 mt-14 mb-24">
+    <div className="mx-auto w-full max-w-[640px] h-auto px-6 md:px-8 py-6 space-y-4 border border-gray-300 mt-14 mb-24">
       <h2 className="mb-6 text-3xl">Login</h2>
       <input
         className="w-full p-4 border border-gray-300"
@@ -24,9 +24,11 @@ export default function Account() {
         </label>
         <p className="text-sm border-b border-black">Forgot Password?</p>
       </div>
-      <div className="flex justify-between">
-        <button className="h-11 w-1/2 bg-black text-white">Log in</button>
-        <button className="flex justify-center items-center gap-2 font-bold">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-0 md:justify-between">
+        <button className="h-11 w-full md:w-1/2 bg-black text-white">
+          Log in
+        </button>
+        <button className="flex justify-center items-center gap-2 font-bold w-full md:w-auto">
           Create an account <MdArrowOutward />
         </button>
       </div>

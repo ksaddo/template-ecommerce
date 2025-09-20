@@ -14,13 +14,13 @@ export default function ProductsList() {
   const swiperRef = useRef(null);
 
   return (
-    <div className="w-full min-h-[800px] md:min-h-[900px] p-4 md:p-[30px] xl:p-[50px] 2xl:px-[100px] 2xl:py-[60px]">
+    <div className="w-full min-h-[720px] md:min-h-[900px] p-4 md:p-[30px] xl:p-[50px] 2xl:px-[100px] 2xl:py-[60px]">
       {/* Header */}
       <div>
         <h1 className="text-center text-[22px] md:text-[42px] mb-2">
           Trending now
         </h1>
-        <p className="w-fit mx-auto text-sm cursor-pointer border-b mb-30">
+        <p className="w-fit mx-auto text-sm cursor-pointer border-b mb-14 md:mb-30">
           VIEW ALL
         </p>
       </div>

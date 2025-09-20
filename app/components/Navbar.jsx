@@ -140,12 +140,17 @@ export default function NavBar() {
           <button aria-label="Search">
             <FiSearch />
           </button>
-          <button aria-label="User">
+          <Link
+            href="/account"
+            aria-label="User">
             <FiUser />
-          </button>
-          <button aria-label="Wishlist">
+          </Link>
+          <Link
+            href="/wishlist"
+            aria-label="Wishlist">
             <FiHeart />
-          </button>
+          </Link>
+
           <button
             onClick={() => setIsCartOpen(true)}
             aria-label="Cart">

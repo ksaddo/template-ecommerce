@@ -53,7 +53,7 @@ export default function ProductCard({
           <h3 className="text h-12 md:h-6 font-bold">{product.name}</h3>
           <p className="text-gray-600 text-sm">{product.desc}</p>
 
-          <p className="font-bold">{product.price}</p>
+          <p className="font-bold">${product.price}</p>
           <p className="text-gray-600 text-sm">{product.brand}</p>
 
           {/* Two-color selector (always gray & white) */}

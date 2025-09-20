@@ -8,7 +8,7 @@ export default function MobileBottomNav() {
     { icon: <FiHome />, label: "Home", href: "/" },
     { icon: <AiOutlineProduct />, label: "Shop", href: "/products" },
     { icon: <FiHeart />, label: "Wishlist", href: "/wishlist" },
-    { icon: <FiUser />, label: "Profile", href: "/profile" },
+    { icon: <FiUser />, label: "Profile", href: "/account" },
   ];
 
   return (

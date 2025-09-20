@@ -32,7 +32,7 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="w-full md:px-[30px] 2xl:px-[100px] border border-t-neutral-300">
+    <div className="w-full md:px-[30px] 2xl:px-[100px] border-t border-neutral-300">
       <Swiper
         modules={[Pagination]}
         spaceBetween={20}
@@ -47,11 +47,11 @@ export default function Services() {
           <SwiperSlide
             key={index}
             className="flex justify-center items-center">
-            <div className="flex flex-col justify-center items-center w-full text-center pt-4 pb-14 md:pt-6 lg:pb-6">
-              <span className="flex justify-center items-center rounded-full w-[70px] h-[70px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] mb-4">
+            <div className="flex flex-col justify-center items-center w-full text-center pt-6 pb-15 lg:pb-7">
+              <span className="flex justify-center items-center rounded-full w-[70px] h-[70px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] mb-5">
                 {service.icon}
               </span>
-              <h3 className="text-lg text-gray-900 mb-2">{service.title}</h3>
+              <h3 className="text-lg text-gray-900 mb-3">{service.title}</h3>
               <p className="text-sm text-gray-600">{service.desc}</p>
             </div>
           </SwiperSlide>
